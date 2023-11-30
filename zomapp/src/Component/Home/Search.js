@@ -56,8 +56,9 @@ const Search = () => {
     return(
         <div id="search">
            <div className="logo">
-               <span>D!</span>
+               <span><div id="zomatologocontainer"><img id="zomatologo" src="https://i.ibb.co/BqQKC1w/zomato.png"></img></div></span>
            </div>
+
            <div id="heading">
               {title}
            </div>

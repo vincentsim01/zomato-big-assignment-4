@@ -49,6 +49,17 @@
     position: absolute;
 }
 
+#zomatologo{
+    height:150px;
+
+
+    opacity:1;
+    animation: moveright 5000ms infinite;
+
+
+}
+
+
 #heading{
     font-size:60px;
     color:white;

@@ -6,8 +6,9 @@ const Header = () => {
     return(
         <header>
             <div id="brand">
-                Developer Funnel
+                Zomato Cafe
             </div>
+            &nbsp;
             <Link to="/">Home</Link>
             <div id="social">
                 <a href="#">
