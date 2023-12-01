@@ -3,7 +3,7 @@ import './QuickSearch.css';
 import QuickDisplay  from './QuickDisplay';
 
 const baseUrl = process.env.REACT_APP_API_URL
-
+console.log(baseUrl);
 const QuickSearch = () => {
 
     const [mealType,setMealType] = useState([]);
