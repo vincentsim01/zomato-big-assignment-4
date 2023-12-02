@@ -6,10 +6,13 @@ const Header = () => {
     return(
         <header>
             <div id="brand">
-                Cafelicious Collection
+                Cafelicious
             </div>
-            &nbsp;
-            <Link to="/">Home</Link>
+            <span id="menu">
+            <Link to="/" class="menumenu">Home</Link>
+            <Link to="/" class="menumenu">About Us</Link>
+            <Link to="/" class="menumenu">Contact Us</Link>
+            </span>
             <div id="social">
                 <a href="#">
                     <img src="https://i.ibb.co/bsXv4bf/facebook.png" alt="fb" className="socialLogo"/>

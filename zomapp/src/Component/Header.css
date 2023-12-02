@@ -18,7 +18,19 @@ header{
     color:white;
     font-size: 30px;
     margin-top:1%;
-    margin-left:1%
+    margin-left:1%;
+    border: 1px solid black;
+}
+
+#menu{
+    border:1px solid black;
+    margin-left:5%;
+    margin-top:20px;
+}
+
+.menumenu{
+    margin-left:15px;
+    margin-top:15px;
 }
 
 #social{

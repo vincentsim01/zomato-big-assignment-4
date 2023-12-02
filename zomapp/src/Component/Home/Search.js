@@ -5,7 +5,7 @@ const baseUrl = process.env.REACT_APP_API_URL
 
 const Search = () => {
 
-    const [title] = useState(' The Best Cafe Across On Earth 616');
+    const [title] = useState(' Cafe Collections');
     const [location,setLocation] = useState([]);
     const [restaurant,setRestaurant] = useState([]);
     
@@ -53,11 +53,13 @@ const Search = () => {
             })
         }
     }
+
+
  
     return(
         <div id="search">
            <div className="logo">
-               <span><div id="zomatologocontainer"><img id="zomatologo" src="https://i.ibb.co/BqQKC1w/zomato.png"></img></div></span>
+               <span><div id="zomatologocontainer"><img id="zomatologo" src="https://i.ibb.co/8rFhHTz/download.jpg"></img></div></span>
            </div>
 
            <div id="heading">
