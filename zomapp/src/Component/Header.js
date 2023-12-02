@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <header>
             <div id="brand">
-                Zomato Cafe
+                Cafelicious Collection
             </div>
             &nbsp;
             <Link to="/">Home</Link>

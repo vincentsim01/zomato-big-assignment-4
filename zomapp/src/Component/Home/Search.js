@@ -5,7 +5,7 @@ const baseUrl = process.env.REACT_APP_API_URL
 
 const Search = () => {
 
-    const [title] = useState(' Find Best Place For Food');
+    const [title] = useState(' The Best Cafe Across On Earth 616');
     const [location,setLocation] = useState([]);
     const [restaurant,setRestaurant] = useState([]);
     
