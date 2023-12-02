@@ -19,7 +19,7 @@ const QuickSearch = () => {
     return(
         <div id="quickSearch">
             <span className="quickHeading">Quick Search</span>
-            <span className="quickSubHeading">Find Restaurants By MealType</span>
+            <span className="quickSubHeading">Find your favourite restaurants for different time of the day</span>
             <QuickDisplay mealData={mealType}/>
         </div>
     )
