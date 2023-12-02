@@ -9,6 +9,7 @@ const Search = () => {
     const [location,setLocation] = useState([]);
     const [restaurant,setRestaurant] = useState([]);
     
+    console.log(baseUrl);
 
     useEffect(() => {
         console.log("renderComponent")
