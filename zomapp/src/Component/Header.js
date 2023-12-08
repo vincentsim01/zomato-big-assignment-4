@@ -9,9 +9,9 @@ const Header = () => {
                 Cafelicious
             </div>
             <span id="menu">
-            <Link to="/" class="menumenu">Home</Link>
-            <Link to="/" class="menumenu">About Us</Link>
-            <Link to="/" class="menumenu">Contact Us</Link>
+            <Link to="/" className="menumenu">Home</Link>
+            <Link to="/" className="menumenu">About Us</Link>
+            <Link to="/" className="menumenu">Contact Us</Link>
             </span>
             <div id="social">
                 <a href="#">
