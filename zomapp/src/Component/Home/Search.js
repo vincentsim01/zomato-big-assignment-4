@@ -35,7 +35,7 @@ const Search = () => {
     const handleCity = (event) => {
         console.log(event.target.value);
         let stateId = event.target.value;
-        fetch(`${baseUrl}/restaurant?stateId=${stateId}`,{method:'GET'})
+        fetch(`${baseUrl}/restaurants?stateId=${stateId}`,{method:'GET'})
         .then((res) => res.json())
         .then((data) => {
             setRestaurant(data)

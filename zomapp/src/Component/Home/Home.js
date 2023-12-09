@@ -7,7 +7,7 @@ const Home = () => {
     return(
         <>
             <Search/>
-            {/* <QuickSearch/> */}
+            <QuickSearch/>
         </>
     )
 }
