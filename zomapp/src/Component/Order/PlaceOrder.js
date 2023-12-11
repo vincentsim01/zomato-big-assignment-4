@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import { useParams,useNavigate} from 'react-router-dom';
+import Header from '../Header';
 
 const baseUrl = process.env.REACT_APP_POST_API_URL;
 
@@ -7,13 +8,16 @@ const PlaceOrder = () => {
     let params = useParams();
     let navigate = useNavigate();
 
+    let sessionData = sessionStorage.getItem('userInfo');
+    let data = JSON.parse(sessionData)
+
     const initialValues = {
         id:Math.floor(Math.random() * 1000000),
         rest_name: params.restName,
-        name:'Amit',
-        email:'amit@gmail.com',
+        name:data.name,
+        email:data.email,
         cost:Math.floor(Math.random()*1000),
-        phone:987654322,
+        phone:data.phone,
         address:"Hon 12 sec 34"
     }
 
@@ -29,10 +33,20 @@ const PlaceOrder = () => {
 
     const checkout = () => {
         console.log(values)
+        fetch(`${baseUrl}/orders`,{
+            method: 'POST',
+            headers:{
+                'accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(values)
+        })
+        .then(navigate('/viewOrder'))
     }
 
     return(
         <>
+            <Header/>
             <div className="container">
                 <hr/>
                 <div className="panel panel-primary">
